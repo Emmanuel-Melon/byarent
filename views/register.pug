@@ -1,0 +1,48 @@
+extends ./layouts/layout.pug
+
+block content
+  .panes-wrapper
+    .left-pane
+      .pane-content
+        h1.heading=message
+        p.paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi vestibulum felis tincidunt eleifend in ut erat. Nullam lacinia metus et pretium tempus. Ut blandit leo leo, nec congue diam accumsan quis."
+        p.paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi vestibulum felis tincidunt eleifend in ut erat. Nullam lacinia metus et pretium tempus. Ut blandit leo leo, nec congue diam accumsan quis."
+        img(src="/img/undraw_good_doggy_4wfq.png" alt="cool image" class="img")
+    .right-pane
+      .pane-content
+        h3.sub-heading="Get started now"
+        p.paragraph="Fill the following form to continue"
+        form(
+          method="POST"
+          action="/users/register"
+          class="registration-form"
+        )
+          label(for="email") Email Address
+          input(
+            type="email"
+            placeholder="e.g you@example.com"
+            name="email"
+            id="email"
+            class="form-input"
+          )
+          label(for="password") Password
+          input(
+            type="password"
+            placeholder="At least 8 characters"
+            name="password"
+            id="password"
+            class="form-input"
+          )
+          label(for="username") Username
+          input(
+            type="text"
+            placeholder="e.g John Doe"
+            name="username"
+            id="username"
+            class="form-input"
+          )
+          input(
+            type="submit"
+            value="Register"
+          )
+      
