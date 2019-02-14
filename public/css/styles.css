@@ -1,0 +1,135 @@
+body {
+  background: #f4eade;
+  padding: 0;
+  margin: 0;
+}
+
+/* typography */
+h1, h2, h3, h4, h5, h6, .navbrand {
+  font-weight: 700;
+  font-family: 'Arimo', Arial, Helvetica, sans-serif;
+  color: #4b4949;
+}
+
+.heading {
+  font-size: 56pt;
+}
+
+.sub-heading {
+  font-size: 36pt;
+  color: #2f4963;
+}
+
+p, li, a, .nav-item, label {
+  font-weight: 400;
+  font-family: 'Arvo', Arial, Helvetica, sans-serif; 
+}
+
+/* footer */
+.footer {
+  background: #2988bc;
+  display: flex;
+}
+
+.footer > * {
+  flex: 1;
+  padding: 2.5em;
+}
+
+/* navbar */
+.navbar {
+  background: #2f4963;
+  padding: 1em;
+  display: flex;
+}
+
+.nav-left {
+  flex: 1;
+}
+
+.nav-right {
+  flex: 2;
+}
+
+.nav-items {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-item {
+  padding: 0.5em;
+  text-decoration: none;
+  color: #2988bc;
+}
+
+.nav-item:hover {
+  color: #2f4963;
+}
+
+.navbrand {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 46px;
+}
+
+.navbrand:hover {
+  color: #2988bc;
+}
+
+/* global styles */
+.panes-wrapper {
+  display: flex;
+  background: #fff;
+}
+
+.left-pane {
+  flex: 2;
+}
+
+.right-pane {
+  flex: 1;
+}
+
+.left-pane, .right-pane {
+  display: flex;
+  padding: 2.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+/* forms */
+.registration-form {
+  background: #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding: 2.5em;
+  border-top: solid 0.4em #2988bc;
+  border-radius: 0.2em;
+  width: 100%;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5em;
+  padding: 1em;
+  border-radius: 0.1em;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+label {
+  color: #2f4963;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered {
+  text-align: center;
+}
