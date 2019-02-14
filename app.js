@@ -29,4 +29,11 @@ app.use(express.static(path.join(__dirname, '/public')))
  */
 app.use('/users', users)
 
+/**
+ * error pages
+ */
+app.use(function (req, res, next) {
+  res.status(404).render('NotFound', { title: 'Page Not Found' })
+})
+
 module.exports = app
